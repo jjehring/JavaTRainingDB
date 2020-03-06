@@ -20,7 +20,9 @@ public class Db {
             {
                 // loop through the result set
                 while (rs.next()) {
-                    logger.info(rs.getString("title"));
+                    logger.info(rs.getInt("albumid") +  "\t" +
+                            rs.getString("title")  +  "\t" +
+                            rs.getString("ArtistId"));
                     System.out.println(
                             rs.getInt("albumid") +  "\t" +
                             rs.getString("title")  +  "\t" +
