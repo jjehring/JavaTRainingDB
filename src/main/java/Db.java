@@ -19,10 +19,11 @@ public class Db {
             ResultSet rs    = stmt.executeQuery(sql);
             {
                 // loop through the result set
+      //while (true) {
                 while (rs.next()) {
                     logger.info(rs.getInt("albumid") +  "\t" +
                             rs.getString("title")  +  "\t" +
-                            rs.getString("ArtistId"));
+                            rs.getString("ArtistId")    );
                     System.out.println(
                             rs.getInt("albumid") +  "\t" +
                             rs.getString("title")  +  "\t" +
